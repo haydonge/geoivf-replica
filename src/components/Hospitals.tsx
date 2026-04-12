@@ -27,7 +27,7 @@ const Hospitals = () => {
   ];
 
   return (
-    <section id="hospitals" className="py-20 bg-white">
+    <section id="hospitals" className="py-20 bg-white scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl font-bold text-slate-900 mb-4">合作顶尖医疗机构</h2>
@@ -43,7 +43,11 @@ const Hospitals = () => {
                 <img 
                   src={hospital.image} 
                   alt={hospital.name} 
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500 motion-reduce:transition-none motion-reduce:hover:transform-none"
+                  loading="lazy"
+                  decoding="async"
+                  width={1200}
+                  height={800}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-white">

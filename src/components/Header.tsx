@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: '首页', href: '#' },
+    { name: '首页', href: '#top' },
     { name: '关于我们', href: '#features' },
     { name: '服务项目', href: '#services' },
     { name: '合作医院', href: '#hospitals' },
@@ -13,12 +13,23 @@ const Header = () => {
     { name: '联系我们', href: '#contact' },
   ];
 
+  useEffect(() => {
+    if (!isMenuOpen) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsMenuOpen(false);
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [isMenuOpen]);
+
   return (
     <header className="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <a href="#" className="flex items-center gap-2">
+            <a href="#top" className="flex items-center gap-2">
               <span className="text-3xl font-bold text-blue-700">GeoIVF</span>
             </a>
           </div>
@@ -46,9 +57,13 @@ const Header = () => {
           </div>
 
           <div className="md:hidden flex items-center">
-            <button 
+            <button
+              type="button"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-slate-600 hover:text-blue-600 focus:outline-none"
+              aria-label={isMenuOpen ? '关闭菜单' : '打开菜单'}
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-menu"
             >
               {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -58,7 +73,10 @@ const Header = () => {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-slate-100 shadow-lg absolute w-full">
+        <div
+          id="mobile-menu"
+          className="md:hidden bg-white border-t border-slate-100 shadow-lg absolute w-full"
+        >
           <div className="px-4 pt-2 pb-6 space-y-1">
             {navLinks.map((link) => (
               <a

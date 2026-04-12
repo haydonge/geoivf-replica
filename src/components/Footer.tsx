@@ -14,7 +14,7 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold mb-4">快捷链接</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">首页</a></li>
+              <li><a href="#top" className="hover:text-white transition-colors">首页</a></li>
               <li><a href="#features" className="hover:text-white transition-colors">关于我们</a></li>
               <li><a href="#services" className="hover:text-white transition-colors">服务项目</a></li>
               <li><a href="#pricing" className="hover:text-white transition-colors">价格套餐</a></li>
@@ -23,18 +23,18 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold mb-4">法律声明</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">隐私政策</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">服务条款</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">免责声明</a></li>
+              <li><a href="#top" className="hover:text-white transition-colors">隐私政策</a></li>
+              <li><a href="#top" className="hover:text-white transition-colors">服务条款</a></li>
+              <li><a href="#top" className="hover:text-white transition-colors">免责声明</a></li>
             </ul>
           </div>
         </div>
         <div className="text-center text-sm flex flex-col md:flex-row justify-between items-center gap-4">
           <p>&copy; {new Date().getFullYear()} GeoIVF. All rights reserved.</p>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-white transition-colors">友链: 吉尔吉斯斯坦代孕网</a>
-            <a href="#" className="hover:text-white transition-colors">哈萨克斯坦代孕网</a>
-            <a href="#" className="hover:text-white transition-colors">乌克兰代孕官网</a>
+            <a href="#top" className="hover:text-white transition-colors">友链: 吉尔吉斯斯坦代孕网</a>
+            <a href="#top" className="hover:text-white transition-colors">哈萨克斯坦代孕网</a>
+            <a href="#top" className="hover:text-white transition-colors">乌克兰代孕官网</a>
           </div>
         </div>
       </div>

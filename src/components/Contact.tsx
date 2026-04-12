@@ -1,9 +1,9 @@
 import React from 'react';
-import { Phone, Mail, MessageCircle, MapPin } from 'lucide-react';
+import { Phone, MessageCircle, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-slate-50">
+    <section id="contact" className="py-20 bg-slate-50 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16">
           
@@ -56,6 +56,8 @@ const Contact = () => {
                   <input 
                     type="text" 
                     id="name" 
+                    name="name"
+                    autoComplete="name"
                     className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
                     placeholder="您的称呼"
                   />
@@ -65,6 +67,9 @@ const Contact = () => {
                   <input 
                     type="text" 
                     id="phone" 
+                    name="contact"
+                    inputMode="tel"
+                    autoComplete="tel"
                     className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
                     placeholder="您的联系方式"
                   />
@@ -75,6 +80,7 @@ const Contact = () => {
                 <label htmlFor="interest" className="block text-sm font-medium text-slate-700 mb-2">感兴趣的目的地</label>
                 <select 
                   id="interest"
+                  name="interest"
                   className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
                 >
                   <option value="">请选择...</option>
@@ -90,6 +96,7 @@ const Contact = () => {
                 <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">具体情况描述（选填）</label>
                 <textarea 
                   id="message" 
+                  name="message"
                   rows={4}
                   className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all resize-none"
                   placeholder="请简要描述您的需求，以便我们更好地为您服务..."
