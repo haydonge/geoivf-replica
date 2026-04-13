@@ -15,9 +15,12 @@ const Footer = () => {
             <h4 className="text-white font-bold mb-4">快捷链接</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="#top" className="hover:text-white transition-colors">首页</a></li>
-              <li><a href="#features" className="hover:text-white transition-colors">关于我们</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">服务项目</a></li>
+              <li><a href="#features" className="hover:text-white transition-colors">核心优势</a></li>
+              <li><a href="#process" className="hover:text-white transition-colors">服务流程</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">目的地</a></li>
+              <li><a href="#outcomes" className="hover:text-white transition-colors">成功率与因素</a></li>
               <li><a href="#pricing" className="hover:text-white transition-colors">价格套餐</a></li>
+              <li><a href="#faq" className="hover:text-white transition-colors">常见问题</a></li>
             </ul>
           </div>
           <div>

@@ -6,10 +6,13 @@ const Header = () => {
 
   const navLinks = [
     { name: '首页', href: '#top' },
-    { name: '关于我们', href: '#features' },
-    { name: '服务项目', href: '#services' },
+    { name: '核心优势', href: '#features' },
+    { name: '服务流程', href: '#process' },
+    { name: '目的地', href: '#services' },
+    { name: '成功率', href: '#outcomes' },
     { name: '合作医院', href: '#hospitals' },
     { name: '价格套餐', href: '#pricing' },
+    { name: '常见问题', href: '#faq' },
     { name: '联系我们', href: '#contact' },
   ];
 

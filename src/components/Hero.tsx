@@ -109,8 +109,8 @@ const Hero = () => {
             <div className="bg-white/88 backdrop-blur-md p-5 md:p-6 rounded-3xl shadow-2xl border border-white/60 max-w-[320px] w-full">
               <div className="flex items-center justify-between gap-4 mb-5">
                 <div>
-                  <p className="text-sm font-semibold text-blue-700 mb-1.5">Hero 背景轮播</p>
-                  <h3 className="text-lg md:text-xl font-bold text-slate-900">母婴主题场景</h3>
+                  <p className="text-sm font-semibold text-blue-700 mb-1.5">海外合法代孕</p>
+                  <h3 className="text-lg md:text-xl font-bold text-slate-900">自卵捐卵夫妻单身</h3>
                 </div>
                 <div className="rounded-full bg-slate-900/90 px-3 py-1.5 text-xs font-semibold text-white">
                   {activeSlide + 1} / {backgroundSlides.length}
@@ -118,7 +118,7 @@ const Hero = () => {
               </div>
 
               <div className="mb-5 rounded-3xl bg-slate-950/90 p-4 text-white">
-                <div className="text-sm font-semibold text-blue-200">当前画面</div>
+                <div className="text-sm font-semibold text-blue-200">合法代孕，回国无虞</div>
                 <div className="mt-2 text-2xl font-bold leading-tight">
                   {backgroundSlides[activeSlide].label}
                 </div>
@@ -141,7 +141,7 @@ const Hero = () => {
                 <div className="w-full relative rounded-2xl overflow-hidden bg-white border border-slate-100 p-1.5 shadow-inner">
                   <img 
                     src="/wechat-qrs.png" 
-                    alt="微信客服二维码: Bellaliuliu 和 Haydonge" 
+                    alt="代孕中介: Bellaliuliu 和 Haydonge" 
                     className="w-full h-auto object-contain mx-auto"
                     style={{ maxHeight: '420px' }}
                     loading="lazy"
@@ -172,7 +172,7 @@ const Hero = () => {
                 </div>
                 <div className="flex items-center gap-1">
                   <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-amber-500"></span>
-                  场景轮播
+                  全程跟踪
                 </div>
               </div>
               <div className="mt-4 grid grid-cols-3 gap-2">
@@ -202,7 +202,7 @@ const Hero = () => {
                 ))}
               </div>
               <div className="mt-4 rounded-2xl bg-blue-50 px-4 py-3 text-sm text-slate-600">
-                当前 Hero 使用母婴主题背景图自动切换，突出温暖、安心与家庭团聚的氛围。
+                   微信联系我们，快速提供咨询
               </div>
             </div>
           </div>
