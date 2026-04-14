@@ -33,7 +33,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <a href="#top" className="flex items-center gap-2">
-              <span className="text-3xl font-bold text-blue-700">GeoIVF</span>
+              <span className="text-3xl font-bold text-blue-700">佳恩宝贝</span>
             </a>
           </div>
           

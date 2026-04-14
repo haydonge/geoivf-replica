@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8 border-b border-slate-800 pb-8">
           <div>
-            <span className="text-2xl font-bold text-white mb-4 block">GeoIVF</span>
+            <span className="text-2xl font-bold text-white mb-4 block">佳恩宝贝</span>
             <p className="text-sm leading-relaxed">
               专业海外代孕与试管婴儿服务平台。致力于为您提供安全、合法、透明的生育解决方案。
             </p>
@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center text-sm flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>&copy; {new Date().getFullYear()} GeoIVF. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} 佳恩宝贝. All rights reserved.</p>
           <div className="flex gap-4">
             <a href="#top" className="hover:text-white transition-colors">友链: 吉尔吉斯斯坦代孕网</a>
             <a href="#top" className="hover:text-white transition-colors">哈萨克斯坦代孕网</a>

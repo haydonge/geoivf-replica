@@ -109,7 +109,7 @@ const Hero = () => {
             <div className="bg-white/88 backdrop-blur-md p-5 md:p-6 rounded-3xl shadow-2xl border border-white/60 max-w-[320px] w-full">
               <div className="flex items-center justify-between gap-4 mb-5">
                 <div>
-                  <p className="text-sm font-semibold text-blue-700 mb-1.5">海外合法代孕</p>
+                  <p className="text-sm font-semibold text-blue-700 mb-1.5">佳恩宝贝海外生殖</p>
                   <h3 className="text-lg md:text-xl font-bold text-slate-900">自卵捐卵夫妻单身</h3>
                 </div>
                 <div className="rounded-full bg-slate-900/90 px-3 py-1.5 text-xs font-semibold text-white">
